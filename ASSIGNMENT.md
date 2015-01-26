@@ -20,7 +20,7 @@ You will be graded not only on your group's solution but also on how well your g
 Your team must have a face-to-face meeting each week with all team members present during the day and time you all agreed upon in your Project #1 submission. Though, I highly encourage your team to have additional face-to-face meetings. You should determine additional channels of communication with team members since you will need to integrate your work with others. Your team should plan and allocate time for integration well before the deadline. I suggest that the group work with the overall project manager to set team deadlines early so that all team members know the status of everyone's work. Create a schedule that all team members can agree to adhere to and work to achieve towards.
 
 ## 2. The Game of Set
-"Set" is a card game in which players attempt to find a group of cards that satisfy a particular criterion. It is a speed game: 12 cards are dealt face-up, and the players try to be the first to make a set from the visible cards. For a complete description of the game see the Wikipedia [entry]().
+"Set" is a card game in which players attempt to find a group of cards that satisfy a particular criterion. It is a speed game: 12 cards are dealt face-up, and the players try to be the first to make a set from the visible cards. For a complete description of the game see the Wikipedia [entry](http://en.wikipedia.org/wiki/Set_%28game%29).
 
 Implement this game in Ruby. Your game can be text-based (i.e., using the console). The basic, required, functionality of your game is to deal the appropriate number of cards, verify the correctness of player-identified sets, replace the identified cards with new ones, and keep track of score to identify a winner.
 
