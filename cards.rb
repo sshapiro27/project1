@@ -6,18 +6,28 @@ class Card
 
   attr_accessor :color, :number, :shading, :symbol
 
-  def initialize(id)
-    self.color = COLORS[id % 3]
-    self.number = NUMBERS[id % 3]
-    self.shading = SHADING[id % 3]
-    self.symbol = SYMBOL[id % 3]
+  def initialize(w, x, y, z)
+    #@cards = SYMBOL.product(SHADING.product((COLORS.product(NUMBERS)))).shuffle
+    self.color = COLORS[w]
+    self.number = NUMBERS[x]
+    self.shading = SHADING[y]
+    self.symbol = SYMBOL[z]
   end
 end
 
 class Deck
   attr_accessor :cards
   def initialize
+    self.cards = Array.new
     # shuffle array and init each Card
-    self.cards = (0..80).to_a.shuffle.collect { |id| Card.new(id) }
+    (0..2).each do |w|
+      (0..2).each do |x|
+        (0..2).each do |y|
+          (0..2).each do |z|
+            self.cards.push(Card.new(w, x, y, z))
+          end
+        end
+      end
+    end
   end
 end
