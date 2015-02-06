@@ -18,13 +18,13 @@ end
 class Deck
   attr_accessor :cards
   def initialize
-    self.cards = Array.new
-    # shuffle array and init each Card
+    self.cards = Array.new #new empty array
+    #Go through all possible combinations
     (0..2).each do |w|
       (0..2).each do |x|
         (0..2).each do |y|
           (0..2).each do |z|
-            self.cards.push(Card.new(w, x, y, z))
+            self.cards.push(Card.new(w, x, y, z)) #init each card
           end
         end
       end
